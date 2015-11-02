@@ -310,7 +310,7 @@ function masteryTooltipReq(tree, index) {
     if ((state[tree][index] || 0) < data[tree][index].ranks) {
 		var existing = masteryTierFull(tree, index);
 		if (existing >= 0) //If we can put more points here, but it will remove points in your current mastery
-			missing.push("Choosing this will remove points in " + data[tree][existing].name + ".");
+			missing.push("Выбор этого таланта отнимет очки из " + data[tree][existing].name + ".");
     }
 
     return missing.join("\n");
