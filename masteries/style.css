@@ -4,21 +4,24 @@ body {
 
 #s2masteries {
     background: url(images/content_tile.jpg) repeat-y;
+    background-size: 100% auto;
     background-color: #EFE0AA;
     font: 11px Arial, Helvetica, sans-serif;
     -moz-user-select: none;
     -khtml-user-select: none;
     -webkit-user-select: none;
-    margin: 20px auto; /* 50 */
-    width: 932px; /* 932 */
-    height: 624px;
-    padding: 40px;
+    margin: 20px auto; /* was 50 */
+    width: 840px; /* was 932 */
+    height: 624px; /* was 624 */
+    padding: 30px; /* was 40 */
     position: relative;
 }
 
 #panel {
-    width: 828px; /* was 920 */
+    width: 800px; /* was 920 */
     height: 80px;
+    margin-left: auto;
+    margin-right: auto;
     position: relative;
     cursor: default;
 }
@@ -121,13 +124,13 @@ button:active {
     margin-bottom: 4px;
 }
 .tree-summary {
-    width: 180px;
+    width: 178px;
     height: 30px;
     padding: 5px;
-    padding-left: 40px;
+    padding-left: 34px;
     background-repeat: no-repeat;
     text-align: left;
-    font-size: 23px;
+    font-size: 22px;
     font-weight: bold;
     position: absolute;
     background-image: url(images/tree-icons.png);
@@ -285,8 +288,8 @@ button:active {
 	width: 76px;
 	height: 76px;
     position: absolute;
-	left: -11px;
-	top: -11px;
+	left: -13px;
+	top: -13px;
 	background: url(images/frames.png);
 }
 
