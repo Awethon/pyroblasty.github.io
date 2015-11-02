@@ -73,7 +73,7 @@ var data = [
             name: "Удары грома",
 			tier: 4,
             ranks: 5,
-            desc: "+# Пробивания брони",
+            desc: "+#% Пробивания брони",
             rankInfo: [1.4, 2.8, 4.2, 5.6, 7],
         },
         {
@@ -164,7 +164,7 @@ var data = [
             name: "Бандит",
 			tier: 3,
             ranks: 1,
-            desc: "Gain 1 gold for each nearby minions killed by allied champions. Gain an additional 3 gold (or 10 if you're melee) when hitting an enemy champion with a basic attack (Cannot occur more than once every 5 seconds).",
+            desc: "Дает 1 золото за ближайших миньонов убитых союзниками. Дает 3 золота (или 10, если Ваш чемпион ближнего боя) при ударе вражеского чемпиона автоатакой (Перезаряжается каждые 5 секунд).",
             rankInfo: [],
         },
         {
@@ -189,7 +189,7 @@ var data = [
             name: "Интеллект",
 			tier: 4,
             ranks: 5,
-            desc: "Your Cooldown Reduction cap is increased by #%, дает #% Сокращения Перезарядки.",
+            desc: "Ваше максимальное сокращение перезарядки увеличено на #% (макс. 45%), дает #% Сокращения Перезарядки.",
             rankInfo: [1, 2, 3, 4, 5],
 			rankInfo2: [1, 2, 3, 4, 5],
         },
