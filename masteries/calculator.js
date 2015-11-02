@@ -1,7 +1,7 @@
 var treeNames = [
-    "Ferocity",
-    "Cunning",
-    "Resolve",
+    "Свирепость",
+    "Коварство",
+    "Решимость",
 ];
 var treeOffsets = [
     0,
@@ -273,7 +273,7 @@ function masteryTooltip(tree, index, rank) {
     var text = {
         tree: tree,
         header: mastery.name,
-        rank: "Rank: " + rank + "/" + mastery.ranks,
+        rank: "Ранг: " + rank + "/" + mastery.ranks,
         rankClass: (rank == mastery.ranks ? rankClasses[2] : (isValidState(tree, index, rank, 1) ? rankClasses[1] : rankClasses[0])),
         req: masteryTooltipReq(tree, index),
         body: masteryTooltipBody(mastery, rank),
@@ -297,7 +297,7 @@ function masteryTooltipBody(mastery, rank)  {
         desc = desc.replace(/#/, Math.round(mastery.perLevel[rank]*100)/100);
     }
 	if (mastery.perLevel2) {
-        desc = desc.replace(/#/, Math.round(mastery.perLevel[rank]*100)/100);
+        desc = desc.replace(/#/, Math.round(mastery.perLevel2[rank]*100)/100);
     }
     return desc;
 }
@@ -306,7 +306,7 @@ function masteryTooltipReq(tree, index) {
     var missing = [];
     var pointReq = masteryPointReq(tree, index)
     if (pointReq > treePoints(tree))
-        missing.push("Requires " + pointReq + " point(s) in " + treeNames[tree][0].toUpperCase() + treeNames[tree].slice(1));
+        missing.push("требуется " + pointReq + " очк. в " + treeNames[tree][0].toUpperCase() + treeNames[tree].slice(1));
     if ((state[tree][index] || 0) < data[tree][index].ranks) {
 		var existing = masteryTierFull(tree, index);
 		if (existing >= 0) //If we can put more points here, but it will remove points in your current mastery
@@ -643,7 +643,7 @@ $(function(){
                     cursor: "pointer",
                 })
                 .mouseover(function(){
-                    customTooltip($("#tooltip").show(), "Double click to reset tree");
+                    customTooltip($("#tooltip").show(), "Двойной клик для сброса ветки");
                 })
                 .mouseout(function(){
                     $("#tooltip").hide();

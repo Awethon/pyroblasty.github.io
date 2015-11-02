@@ -9,15 +9,15 @@ body {
     -moz-user-select: none;
     -khtml-user-select: none;
     -webkit-user-select: none;
-    margin: 40px auto; /* 50 */
-    width: 900px; /* 932 */
+    margin: 20px auto; /* 50 */
+    width: 932px; /* 932 */
     height: 624px;
     padding: 40px;
     position: relative;
 }
 
 #panel {
-    width: 920px;
+    width: 828px; /* was 920 */
     height: 80px;
     position: relative;
     cursor: default;
@@ -34,7 +34,8 @@ body {
 .art-top {
     width: 100%;
     height: 234px;
-    background: url(images/content_top.png);
+    background: url(images/content_top.png) no-repeat;
+    background-size: 100%;
     position: absolute;
     top: 0;
     left: 0;
@@ -43,7 +44,9 @@ body {
 .art-bottom {
     width: 100%;
     height: 150px;
-    background: url(images/content_bot.jpg);
+    background: url(images/content_bot.jpg) no-repeat;
+    background-size: 100%;
+    background-position: left bottom;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -118,7 +121,7 @@ button:active {
     margin-bottom: 4px;
 }
 .tree-summary {
-    width: 160px;
+    width: 175px;
     height: 30px;
     padding: 5px;
     padding-left: 40px;
@@ -301,7 +304,7 @@ button:active {
 }
 
 #footer {
-    width: 920px;
+    width: 100%;
     height: 80px;
     position: relative;
 	margin-top: 10px;

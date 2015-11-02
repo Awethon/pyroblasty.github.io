@@ -72,7 +72,7 @@ function mute_music() {
 		MUSIC = true;
 	}
 	updateMusic();
-	$("#mute-music").text(music_on ? "Sound on" : "Sound off");
+	$("#mute-music").text(music_on ? "Звук включен" : "Звук выключен");
 }
 
 $(function(){
